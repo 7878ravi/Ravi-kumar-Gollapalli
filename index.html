@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #banner {
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    margin: 8px; 
+  }
+  #canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+ 
+
+  #fname{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+#fdob{
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.card {
+   
+  background: linear-gradient(45deg, rgb(57, 60, 99) 0%,rgb(52, 69, 163) 15%,rgb(92, 44, 44) 60%,rgb(75, 75, 167) 100%); 
+  border-radius: 4px;
+  height: 85vh; 
+  width: 80vw;  
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); 
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+img.birthday {
+  max-height: 40vh;
+}
+
+.text {
+  padding: 1em;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+    </style>
+
+    <title>Star</title>
+</head>
+<body>
+    <div id="banner">
+        <canvas id="canvas"></canvas>
+        <div class="card">
+            <div class="text" style="position: relative;">
+              <form action="/url" method="GET">
+                  <label for="fb" style="color: rgb(207, 174, 25); text-align: center;"><h1>MANY MORE HAPPY RETURNS OF THE DAY!</h1></label> -->
+                  <input type="text" name="fname" id="fname" style="color: rgb(189, 202, 71); font-size:x-large; text-align: center; " placeholder="Enter the Name" required><br><br>
+                  <input type="text" name="fname" id="fdob" style="color: rgb(30, 22, 145); font-size: larger; text-align: center;" placeholder="Enter the Date" required>
+                </form>
+                <p style="text-align: center; font-style: italic;  color: rgb(247, 235, 244);"><i>“Birthdays come around every year, but friends like you only come once in a lifetime. I’m so glad you came into my life. Best wishes on your special day.” </i></p>
+              <p class="muted" style="text-align: right;font-style: oblique;font-size:larger;   color: rgb(255, 255, 19);">༻༒༒༺  '   ༻༒༒༺"  </p>
+            </div>
+            <div class="space"></div>
+        </div>
+        
+    </div> 
+   
+    
+</body>
+</html>
